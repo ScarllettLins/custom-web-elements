@@ -1,0 +1,315 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+  -webkit-user-select: none; /* Para navegadores baseados em WebKit (como o Chrome e o Safari) */
+  -moz-user-select: none; /* Para o Firefox */
+  -ms-user-select: none; /* Para o Internet Explorer/Edge */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.number-selector-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid #071b28;
+    width: 150px;
+}
+
+.decrement,
+.increment {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    outline: none;
+}
+
+.decrement {
+    background-color: #071b28;
+    color: white;
+}
+
+.increment {
+    background-color: #786cf8;
+    color: white;
+}
+
+.number-count {
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.number-select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-container-mensal,
+.pricing-container-anual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 10px 10px;
+ }
+
+.left-table-mensal,
+.right-table-mensal,
+.left-table-anual,
+.right-table-anual {
+    text-align: center;
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, .1);
+    transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
+    padding: 2em 3em;
+    border-radius: 30px;
+    margin: 10px 5px;
+    flex: 1;
+}
+
+.left-table-mensal,
+.left-table-anual {
+    background-color: #fff;
+    border: 1px solid #071b28;
+    height: 600px;
+}
+
+.right-table-mensal,
+.right-table-anual {
+    background-color: #786cf8;
+    color: white;
+    border: 1px solid #786cf8;
+    margin-left: 10px;
+    height: 700px;
+}
+
+.right-table-anual.full-width {
+    width: 200%;
+}
+
+.additional-info {
+    font-weight: bold;
+    text-align: center;
+}
+
+.custom-button {
+    background-color: #786cf8;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.custom-button-2-mensal, .custom-button-2-anual {
+    background-color: #071b28;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.price-number-mensal,
+.price-number-anual,
+.price-number-mensal-pro,
+.price-number-anual-pro {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.left-align {
+    text-align: left;
+    font-size: 16px;
+}
+
+.indented {
+    text-indent: 40px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.left-table h2,
+.right-table h2 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.left-table p,
+.right-table p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.left-table .price-label,
+.right-table .price-label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.left-table,
+.right-table {
+    font-size: 16px;
+}
+
+.left-table h2,
+.right-table h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0px 0px -20px 0px;
+}
+
+hr {
+    width: 70%;
+    margin: 0 auto;
+    color: black;
+}
+
+.left-table .feature-list,
+.right-table .feature-list {
+    font-size: 12px;
+}
+
+.feature-list {
+    font-size: 12px;
+}
+
+.small-text {
+    font-size: 12px;
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+}
+
+.plan-label {
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.left-table .plan-label,
+.right-table .plan-label {
+    font-size: 12px;
+    margin-top: -20px;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #dee6f2;
+    border-radius: 30px;
+    width: 250px;
+    margin-top: 20px;
+}
+
+.monthly-toggle,
+.annual-toggle {
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    outline: none;
+    color: #071b28;
+    background-color: transparent;
+}
+
+.monthly-toggle.active,
+.annual-toggle.active {
+    background-color: white;
+    border: 1px solid #071b28;
+}
+
+.monthly-toggle.inactive,
+.annual-toggle.inactive {
+    background-color: transparent;
+}
+
+.economia-anual-basic,
+.economia-anual-pro {
+font-weight: 600;
+font-size: 14px;
+}
+/* Adicione isso ao seu código CSS */
+.annual-toggle::before {
+content: "2 Meses Grátis";
+position: absolute;
+white-space: nowrap;
+top: -20px;
+left: 50%;
+transform: translateX(-50%);
+background-color: #786CF8;
+color: white;
+padding: 2px 10px;
+font-size: 12px;
+border-radius: 30px; /* Bordas arredondadas */
+}
+
+/* Estilo adicional para o botão "Anual" */
+.annual-toggle {
+position: relative;
+z-index: 1; /* Para garantir que o texto do botão fique acima do retângulo */
+}
+
+@media (max-width: 768px) {
+.pricing-container-mensal, .pricing-container-anual {
+flex-direction: column;
+max-width: 100%;
+}
+
+.left-table-mensal, .right-table-mensal, .left-table-anual, .right-table-anual {
+margin: 10px 0;
+}
+
+.left-table-mensal, .left-table-anual, .right-table-mensal, .right-table-anual {
+height: auto;
+}
+
+.left-table-mensal, .left-table-anual {
+border-radius: 30px;
+padding: 2em 1em;
+}
+
+.right-table-mensal, .right-table-anual {
+margin-left: 0;
+padding: 2em 1em;
+}
+
+.economia-anual-basic, .economia-anual-pro {
+font-size: 12px;
+}
+}

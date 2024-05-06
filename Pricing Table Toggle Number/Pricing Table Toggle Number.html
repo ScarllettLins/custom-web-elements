@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Pricing Table Toggle Number</title>
+    <link rel="stylesheet" type="text/css" href="./pricing_table_toggle_number.css">
+</head>
+<body>
+    <div class="container">
+        <div class="number-select">
+            <div class="number-selector-container">
+                <button class="decrement" onclick="updateCount(-1)">-</button>
+                <span class="number-count" id="number">3</span>
+                <button class="increment" onclick="updateCount(1)">+</button>
+            </div>
+            <div class="additional-info">Número adicional: <span style="color: #071b28;">R$ 98,00</span></div>
+        </div>
+        
+        <div class="pricing-container-mensal" style="display: flex;">
+            <div class="left-table-mensal" style="display: block;">
+                <h2>Basic</h2>
+                <p>Básico, mas poderoso.</p>
+                <hr>
+                <p>R$<span class="price-number-mensal">394</span>/Mês</p>
+                <p class="plan-label">no plano mensal</p>
+                <br>
+                <a class="custom-button" id="buyLinkMensal" href="https://www.asmarte.com/mensal/3">Experimente grátis*</a>
+                <br><br><br><hr>
+                <br>
+                <div class="left-align">
+                    <div class="feature-list">
+                        ✓ Mensagens Ilimitadas<br>
+                        ✓ +30 Integrações e Ilimitadas<br>
+                        ✓ Disparo em Massa (Campanhas)<br>
+                        ✓ Envio de Imagens e Áudios<br>
+                        ✓ Tutoriais de Configuração<br>
+                        ✓ Plug Academy (Vídeos Tutoriais)<br>
+                        ✓ Gestão de Contatos<br>
+                        ✓ Criação de Etiquetas
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-table-mensal">
+                <h2>Pro</h2>
+                <p>Seja Pro. Vá além.</p>
+                <hr>
+                <br>
+                <div class="left-align">
+                    <div class="feature-list">
+                    ✓ Mensagens Ilimitadas<br>
+                    ✓ 30+ Integrações Ilimitadas<br>
+                    ✓ Disparo em Massa (Campanhas)<br>
+                    ✓ Envio de Imagens e Áudios<br>
+                    ✓ Tutoriais de Configuração<br>
+                    ✓ PlugLead Academy<br>
+                    ✓ Gestão de Contatos<br>
+                    ✓ Criação de Etiquetas<br>
+                    ✓ Automação (ChatBot)<br>
+                    </div>
+                </div>
+                <div class="indented indented-line">+ FUNIS ILIMITADOS</div>
+                <div class="indented">+ Responda clientes 24/7</div>
+                <div class="indented">+ Gatilhos de integrações</div>
+                <div class="indented">+ Gatilho de palavras-chave</div>
+                <div class="indented">+ Plugue diferentes funis</div>
+                <br>
+                <hr>
+                <p>R$<span class="price-number-mensal-pro">3940</span>/Mês</p>
+                <p class="plan-label">no plano mensal</p>
+                <br>
+                <a class="custom-button-2-mensal" id="buyLinkMensalPro" href="https://www.asmarte.com/mensal/pro/3">Experimente Grátis*</a>
+                <p class="small-text">* Período gratuito: 7 dias</p>
+            </div>
+        </div>
+
+        <div class="pricing-container-anual" style="display: none;">
+            <div class="left-table-anual" style="display: block;">
+                <h2>Basic</h2>
+                <p>Básico, mas poderoso.</p>
+                <hr>
+                <p>R$<span class="price-number-anual"></span>/Ano</p>
+                <p class="plan-label">no plano anual</p>
+                <p class="economia-anual-basic" id="economiaAnualBasic">R$ 19 de economia</p>
+                <br>
+                <a class="custom-button" id="buyLinkAnual" href="https://www.asmarte.com/anual/3">Experimente grátis*</a>
+                <br><br><br><hr>
+                <br>
+                <div class="left-align">
+                    <div class="feature-list">
+                        ✓ Mensagens Ilimitadas<br>
+                        ✓ +30 Integrações e Ilimitadas<br>
+                        ✓ Disparo em Massa (Campanhas)<br>
+                        ✓ Envio de Imagens e Áudios<br>
+                        ✓ Tutoriais de Configuração<br>
+                        ✓ Plug Academy (Vídeos Tutoriais)<br>
+                        ✓ Gestão de Contatos<br>
+                        ✓ Criação de Etiquetas
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-table-anual">
+                <h2>Pro</h2>
+                <p>Seja Pro. Vá além.</p>
+                <hr>
+                <br>
+                <div class="left-align">
+                    <div class="feature-list">
+                    ✓ Mensagens Ilimitadas<br>
+                    ✓ 30+ Integrações Ilimitadas<br>
+                    ✓ Disparo em Massa (Campanhas)<br>
+                    ✓ Envio de Imagens e Áudios<br>
+                    ✓ Tutoriais de Configuração<br>
+                    ✓ PlugLead Academy<br>
+                    ✓ Gestão de Contatos<br>
+                    ✓ Criação de Etiquetas<br>
+                    ✓ Automação (ChatBot)<br>
+                    </div>
+                </div>
+                <div class="indented indented-line">+ FUNIS ILIMITADOS</div>
+                <div class="indented">+ Responda clientes 24/7</div>
+                <div class="indented">+ Gatilhos de integrações</div>
+                <div class="indented">+ Gatilho de palavras-chave</div>
+                <div class="indented">+ Plugue diferentes funis</div>
+                <br>
+                <hr>
+                <p>R$<span class="price-number-anual-pro"></span>/Mês</p>
+                <p class="plan-label">no plano anual</p>
+                <p class="economia-anual-pro" id="economiaAnualPro"></p>
+                <br>
+                <a class="custom-button-2-anual" id="buyLinkAnualPro" href="https://www.asmarte.com/anual/pro/3">Experimente Grátis*</a>
+                <p class="small-text">* Período gratuito: 7 dias</p>
+            </div>
+        </div>
+        
+
+        <div class="toggle-container">
+            <button class="monthly-toggle active" onclick="togglePlan(&#39;monthly&#39;)">Mensal</button>
+            <button class="annual-toggle" onclick="togglePlan(&#39;annual&#39;)">Anual</button>
+        </div>
+    </div>
+
+    <script src="./pricing_table_toggle_number.js"></script>
+
+
+</body></html>
